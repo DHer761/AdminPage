@@ -11,18 +11,18 @@
         <!-- ******** SIDEBAR ******** -->
         <div class="sidebar">
             <p class="dashboard">Dashboard</p>
-            <div class="navigationButtons">
-                <button>Home</button>
-                <button>Profile</button>
-                <button>Messages</button>
-                <button>History</button>
-                <button>Tasks</button>
-                <button>Communities</button>
+            <div class="navigationDiv">
+                <button class="navButtons">Home</button>
+                <button class="navButtons">Profile</button>
+                <button class="navButtons">Messages</button>
+                <button class="navButtons">History</button>
+                <button class="navButtons">Tasks</button>
+                <button class="navButtons">Communities</button>
             </div>
-            <div class="additionalSettingsButtons">
-                <button>Settings</button>
-                <button>Support</button>
-                <button>Privacy</button>
+            <div class="additionalSettingsDiv">
+                <button class="additionalSettingsButtons">Settings</button>
+                <button class="additionalSettingsButtons">Support</button>
+                <button class="additionalSettingsButtons">Privacy</button>
             </div>
         </div>
         <!-- ******** HEADER ******** -->
@@ -33,27 +33,88 @@
                     <input type="text" id="search_box">
                 </form>
             </div>
-            <div id="big_profile">big profile</div>
-            <div id="small_profile">small profile</div>
-            <div id="project_buttons">project buttons</div>
+            <div id="big_profile_container">
+                <p id="hi_there">Hi there,</p>
+                <p id="big_profile">Morgan Oakley (@morgan)</p>
+            </div>
+            <div id="small_profile_container">
+                <div class="notificationButtonContainer">
+                    <img src="bell-ring-outline.svg">
+                    <button class="bellNotificationButton"></button>
+                </div>
+                <p id="small_profile">Morgan Oakley</p>
+            </div>
+            <div id="project_buttons_container">
+                <button class="projectButtons">New</button>
+                <button class="projectButtons">Upload</button>
+                <button class="projectButtons">Share</button>
+            </div>
         </div>
 
         <!-- ******** MAIN CONTENT ******** -->
         <div class="mainContent">
-            <div class="projectContent">
-                <p>Your Projects</p>
-                <div>Super Cool Project</div>
-                <div>Less Cool Project</div>
-                <div>Impossible App</div>
-                <div>Easy Peasy App</div>
-                <div>Ad Blocker</div>
-                <div>Money Maker</div>
+            <p id="yourProjects">Your Projects</p>
+            <p id="announcementParagraph">Announcements</p>
+            <p id="trendingParagraph">Trending</p>
+            <div id="projectContainer">
+                <div class="project">
+                    <p class="paragraphHeader">Super Cool Project</p>
+                    <p class="paragraphContent">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+                <div class="project">
+                    <p class="paragraphHeader">Less Cool Project</p>
+                    <p class="paragraphContent">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapein et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                </div>
+                <div class="project">
+                    <p class="paragraphHeader">Impossible App</p>
+                    <p class="paragraphContent">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                </div>
+                <div class="project">
+                    <p class="paragraphHeader"> Easy Peasy App</p>
+                    <p class="paragraphContent">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                </div>
+                <div class="project">
+                    <p class="paragraphHeader">Ad Blocker</p>
+                    <p class="paragraphContent">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                </div>
+                <div class="project">
+                    <p class="paragraphHeader">Money Maker</p>
+                    <p class="paragraphContent">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                </div>
             </div>
-            <div class="projectSidebar">
-                <p>Announcements</p>
-                <div>Announcement Box</div>
-                <p>Trending</p>
-                <div>Trending Box</div>
+
+                <div class="announcementContainer">
+                    <div class="announcementDiv">
+                        <p class="announcementHeader">Site Maintenance</p>
+                        <p class="announcementContent">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                    </div>
+                    <div id="middleAnnouncementDiv" class="announcementDiv">
+                        <p class="announcementHeader">Community Share Day</p>
+                        <p class="announcementContent">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                    </div>
+                    <div class="announcementDiv">
+                        <p class="announcementHeader">Updated Privacy Policy</p>
+                        <p class="announcementContent">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fingilla sagittis sem in mattis...</p>
+                    </div>
+                </div>
+                <div class="trendingContainer">
+                    <div class="trendingDiv">
+                        <p class="trendingUser">@tegan</p>
+                        <p class="trendingProject">World Peace Builder</p>
+                    </div>
+                    <div class="trendingDiv">
+                        <p class="trendingUser">@morgan</p>
+                        <p class="trendingProject">Super Cool Project</p>
+                    </div>
+                    <div class="trendingDiv">
+                        <p class="trendingUser">@kendall</p>
+                        <p class="trendingProject">Life Changing App</p>
+                    </div>
+                    <div class="trendingDiv">
+                        <p class="trendingUser">@alex</p>
+                        <p class="trendingProject">No Traffic Maker</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
